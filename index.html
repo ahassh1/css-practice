@@ -39,6 +39,24 @@
     align-items: center;
     
    }
+   form{
+   width: 40%;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+   }
+   form input{
+    /* width: 38%; */
+   }
+  
+
+  .container_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   
        
     </style>
@@ -60,19 +78,9 @@
    <div class="box">flex-5</div>
    <div class="box">flex-6</div>
    </div>
-    <!-- <form>
-        <p class="po">Name:</p>
-        <input type="text" placeholder="write your name">
-        <p>Phone No:</p>
-        <input type="number" placeholder="write your number">
-        <p>Password:</p>
-        <input type="password" placeholder="write your password"><br><br>
-        
-        <input type="submit" class="in">
-        <input type="reset">
-    </form>
 
-    <div class="container">
+
+    <!-- <div class="container">
         <p>this is polash</p>
         <div class="rec1">
             <img src="./images/Rectangle 7.png" alt="">
@@ -103,6 +111,21 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus dignissimos tempore aperiam dolore qui optio earum dolores corporis. 
 
     </div> -->
+
+<div class="container_main">
+    <form> 
+        <h2>Name :</h2>
+        <input type="text" placeholder="write your name" required>
+        <h2>Email :</h2>
+        <input type="text" placeholder="write your email" required>
+        <h2>Date of birth :</h2>
+        <input type="text" placeholder="write your date of birth"  required>
+        <h2>Password  :</h2>
+        <input type="text" placeholder="write your password" required><br><br><br>
+        <input type="submit" value="Login">
+        <input type="reset">
+    </form>
+</div>
 
     
 </body>
