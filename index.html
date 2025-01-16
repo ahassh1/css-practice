@@ -6,71 +6,40 @@
     <title>flexbox layout</title>
     <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/vector-blue-social-media-logo_1080184-225.jpg?semt=ais_hybrid" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+
+
     <style>
-     /* .container {
-    position: relative;
-    height: 350px;
-    border: 4px solid purple;
+
+  .container_calender {
+    /* display: flex;
+    justify-content: center;
+    gap: 10px;
+    this perpose i can easily make calender to seven in one div   */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 30px repeat(5, 1fr);
+    row-gap:10px;
+    column-gap: 6px;
+    margin: 20px 10px;
+
   }
-
-  .rec1 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  } */
-   .container_box{
-     border: 2px solid gray;
-     border-radius: 5px;
-     display: flex;
-     justify-content: space-evenly;
-     height: 300px;
-     margin-top: 30px;
-     align-items: center;
-     flex-wrap:wrap;
-
-   }
-   .box{
-    height: 70px;
-    width: 70px;
-    border: 2px dashed red;
+  .days, .day{
+    background-color: rgba(98, 255, 255, 0.829);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   }
-   form{
-   width: 40%;
-    margin: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid blue;
-   }
-   form input{
-    /* width: 38%; */
-   }
-  
-
-  .container_main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 11px 1px;
+    font-size: 1.4em;
+    font-weight: 500;
+   
   }
-  .item_container{
-    border: 2px solid rgb(47, 248, 255);
-   display: grid;
-   /* grid-template-columns: 200px 200px 500px 200px 200px; */
-   /* grid-template-columns: repeat(2, 400px) 100px 300px; */
-   /* grid-template-columns: repeat(5, 2fr)1fr; */
-   /* grid-template-columns: repeat(4, 1fr) 3fr;*/
-   grid-template-rows: repeat(3, 1fr) 2fr 2fr;
-}
-  .items{
-    border: 1px solid red;
-    border-radius: 5px;
+  .day{
+     background-color: rgba(247, 247, 166, 0.87); 
+     font-size: 1.5em;
+     font-weight: 600;  
   }
-  
        
     </style>
 </head>
@@ -93,7 +62,7 @@
    </div>
 
 
-    <!-- <div class="container">
+     <!-- <div class="container">
         <p>this is polash</p>
         <div class="rec1">
             <img src="./images/Rectangle 7.png" alt="">
@@ -141,13 +110,14 @@
 </div>
 
 <div class="item_container">
-    <div class="items">item -1</div>
+
+  <div class="items">item -1</div>
     <div class="items">item -2</div>
     <div class="items">item -3</div>
     <div class="items">item -4</div>
     <div class="items">item -5</div>
     <div class="items">item -6</div>
-    <div class="items">item -7</div>
+    <div class="items">item -7</div>   
     <div class="items">item -8</div>
     <div class="items">item -9</div>
     <div class="items">item -10</div>
@@ -162,6 +132,57 @@
     <div class="items">item -19</div>
     <div class="items">item -20</div>
 </div>
+
+  <div class="container_calender">
+
+        <div class="day">s</div>
+        <div class="day">su</div>
+        <div class="day">mon</div>
+        <div class="day">te</div>
+        <div class="day">we</div>
+        <div class="day">thu</div>
+        <div class="day">f</div>
+
+
+   
+        
+    
+    <div class="days">28</div>
+    <div class="days">29</div>
+    <div class="days">30</div>
+    <div class="days">1</div>
+    <div class="days">2</div>
+    <div class="days">3</div>
+    <div class="days">4</div>
+    <div class="days">5</div>
+    <div class="days">6</div>
+    <div class="days">7</div>
+    <div class="days">8</div>
+    <div class="days">9</div>
+    <div class="days">10</div>
+    <div class="days">11</div>
+    <div class="days">12</div>
+    <div class="days">13</div>
+    <div class="days">14</div>
+    <div class="days">15</div>
+    <div class="days">16</div>
+    <div class="days">17</div>
+    <div class="days">18</div>
+    <div class="days">19</div>
+    <div class="days">20</div>
+    <div class="days">21</div>
+    <div class="days">22</div>
+    <div class="days">23</div>
+    <div class="days">24</div>
+    <div class="days">25</div>
+    <div class="days">26</div>
+    <div class="days">27</div>
+    <div class="days">28</div>
+    <div class="days">29</div>
+    <div class="days">30</div>
+    <div class="days">31</div>
+
+  </div>
 
     
 </body>
