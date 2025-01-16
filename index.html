@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css practice</title>
+    <title>flexbox layout</title>
     <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/vector-blue-social-media-logo_1080184-225.jpg?semt=ais_hybrid" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <style>
-     .container {
+     /* .container {
     position: relative;
     height: 350px;
     border: 4px solid purple;
@@ -18,12 +18,49 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
+  } */
+   .container_box{
+     border: 2px solid gray;
+     border-radius: 5px;
+     display: flex;
+     justify-content: space-evenly;
+     height: 300px;
+     margin-top: 30px;
+     align-items: center;
+     flex-wrap:wrap;
+
+   }
+   .box{
+    height: 70px;
+    width: 70px;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
+  
        
     </style>
 </head>
 <body>
-    <form>
+
+   <p>flex box model</p>
+   <div class="container_box">
+    <div class="box">flex-1</div>
+   <div class="box">flex-2</div>
+   <div class="box">flex-3</div>
+   <div class="box">flex-4</div>
+   <div class="box">flex-5</div>
+   <div class="box">flex-6</div>
+   <div class="box">flex-1</div>
+   <div class="box">flex-2</div>
+   <div class="box">flex-3</div>
+   <div class="box">flex-4</div>
+   <div class="box">flex-5</div>
+   <div class="box">flex-6</div>
+   </div>
+    <!-- <form>
         <p class="po">Name:</p>
         <input type="text" placeholder="write your name">
         <p>Phone No:</p>
@@ -65,7 +102,7 @@
         </div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatibus dignissimos tempore aperiam dolore qui optio earum dolores corporis. 
 
-    </div>
+    </div> -->
 
     
 </body>
